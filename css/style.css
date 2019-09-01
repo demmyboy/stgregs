@@ -177,7 +177,8 @@ a,
 }
 
 .showCaseHeader {
-    margin-top: 140px !important;
+    margin-top: 250px !important;
+    font-weight: 400 !important;
 }
 
 .nickName {
@@ -205,8 +206,8 @@ a,
         vertical-align: middle;
         padding: 0 0 0 5px;
     }
-    .typed-words {
-        font-size: 3rem;
+    .showCaseHeader {
+        font-size: 3.5rem;
     }
     #gallery {
         position: relative;
