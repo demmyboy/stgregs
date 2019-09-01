@@ -126,6 +126,15 @@ a,
     color: #fff !important;
 }
 
+#members .card {
+    background: rgb(68, 50, 102, 0.8);
+    color: #fff;
+}
+
+.loadMore {
+    border-radius: 15px !important;
+}
+
 .gallery-block {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -169,6 +178,10 @@ a,
 
 .showCaseHeader {
     margin-top: 140px !important;
+}
+
+.nickName {
+    display: inline !important;
 }
 
 @media(min-width:576px) {
