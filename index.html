@@ -117,7 +117,7 @@
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
-                                    <a href="img/person1.jpg" class="lightbox">
+                                    <a href="#" class="lightbox">
                                         <img src="img/meetUp_InPixio.jpg" alt="" class="card-img-top">
                                     </a>
                                     <div class="card-body bg-dark text-white">
@@ -129,7 +129,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
-                                    <a href="img/person3.jpg" class="lightbox">
+                                    <a href="#" class="lightbox">
                                         <img src="img/Soccer_InPixio.jpg" alt="" class="card-img-top">
                                     </a>
                                     <div class="card-body bg-dark text-white">
@@ -141,7 +141,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
-                                    <a href="img/person2.jpg" class="lightbox">
+                                    <a href="#" class="lightbox">
                                         <img src="img/School_Event_InPixio.jpg" alt="" class="card-img-top">
                                     </a>
                                     <div class="card-body bg-dark text-white">
@@ -155,7 +155,7 @@
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
-                                    <a href="img/person3.jpg" class="lightbox">
+                                    <a href="#" class="lightbox">
                                         <img src="img/getTogether_InPixio.jpg" alt="" class="card-img-top">
                                     </a>
                                     <div class="card-body bg-dark text-white">
@@ -167,7 +167,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
-                                    <a href="img/person2.jpg" class="lightbox">
+                                    <a href="#" class="lightbox">
                                         <img src="img/cake_InPixio.jpg" alt="" class="card-img-top">
                                     </a>
                                     <div class="card-body bg-dark text-white">
@@ -179,7 +179,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
-                                    <a href="img/person1.jpg" class="lightbox">
+                                    <a href="#" class="lightbox">
                                         <img src="img/collegeGate_InPixio.jpg" alt="" class="card-img-top">
                                     </a>
                                     <div class="card-body bg-dark text-white">
@@ -463,6 +463,25 @@
         baguetteBox.run('.cards-gallery', {
             animation: 'slideIn'
         })
+    </script>
+    <script>
+        // add smooth scrolling
+        $('#main-nav a').on('click', function(e) {
+            // check for hash value
+            if (this.hash !== '') {
+                //prevent default behavior
+                e.preventDefault();
+                const hash = this.hash;
+
+                // animate smooth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+                    // add hash to URL after scroll
+                    window.location.hash = hash;
+                })
+            }
+        });
     </script>
 </body>
 
